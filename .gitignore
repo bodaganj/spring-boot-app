@@ -24,3 +24,6 @@ hs_err_pid*
 
 # mvn folder
 /target
+
+# Intellij folder
+/.idea
