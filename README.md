@@ -8,5 +8,5 @@
 
 ## REST endpoints
 * http://localhost:8080/monitor/version - returns hardcoded string
-* http://localhost:8080/actuator/info - returns java related info
+* http://localhost:8080/actuator/info - returns java/application related info
 * http://localhost:8080/actuator/health - return application status (UP/DOWN)
