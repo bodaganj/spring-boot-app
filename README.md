@@ -10,3 +10,13 @@
 * http://localhost:8080/monitor/version - returns hardcoded string
 * http://localhost:8080/actuator/info - returns java/application related info
 * http://localhost:8080/actuator/health - return application status (UP/DOWN)
+
+## Preconditions
+Run the following command to start ZK and Kafka in docker
+````
+docker-compose -f dependencies-compose.yaml up
+````
+Run the following test to send some test data to kafka:
+````
+com.bodaganj.spring.boot.app.precondition.PrepareEnvTest
+````
