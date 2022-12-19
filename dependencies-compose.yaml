@@ -26,3 +26,12 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://KAFKA:9092,PLAINTEXT_HOST://localhost:29092
     depends_on:
       - zookeeper
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
