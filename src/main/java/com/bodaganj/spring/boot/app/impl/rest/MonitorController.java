@@ -1,4 +1,4 @@
-package com.bodaganj.spring.boot.app.rest;
+package com.bodaganj.spring.boot.app.impl.rest;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;

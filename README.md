@@ -22,7 +22,16 @@ Run the following test to send some test data to kafka:
 com.bodaganj.spring.boot.app.precondition.PrepareEnvTest
 ````
 
-## Flow
+## App flow
 1. Read kafka
 2. Update mongo
 3. Provide some data from Mongo via rest
+
+## Test flow
+1. Start docker dependencies
+2. Run test to create kafka topic
+3. Start app
+4. Run test to feed kafka with some data
+5. Check app consumes data from kafka
+6. Check app writes data to Mongo
+7. Check data is available via rest
