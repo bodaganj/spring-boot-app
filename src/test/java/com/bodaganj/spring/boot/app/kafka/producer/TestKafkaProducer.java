@@ -12,7 +12,7 @@ import java.util.concurrent.Future;
 
 @Slf4j
 @RequiredArgsConstructor(access = AccessLevel.PACKAGE)
-public class FeederKafkaProducer<V> implements AutoCloseable {
+public class TestKafkaProducer<V> implements AutoCloseable {
 
    private final KafkaProducer<String, V> producer;
    private final String topic;

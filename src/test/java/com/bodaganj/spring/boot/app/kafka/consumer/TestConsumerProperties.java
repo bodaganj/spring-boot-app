@@ -12,7 +12,7 @@ import java.util.Properties;
 
 @Data
 @Builder
-public class FeederConsumerProperties<V> {
+public class TestConsumerProperties<V> {
 
    @Builder.Default
    private final String groupId = "TestGroupId";

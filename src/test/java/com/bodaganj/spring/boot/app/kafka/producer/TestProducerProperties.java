@@ -10,7 +10,7 @@ import java.util.Properties;
 
 @Data
 @Builder
-public class FeederProducerProperties<V> {
+public class TestProducerProperties<V> {
 
    private final String brokers;
    private final Serializer<V> serializer;

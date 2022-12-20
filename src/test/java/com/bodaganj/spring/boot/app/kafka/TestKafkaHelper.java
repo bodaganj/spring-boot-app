@@ -1,7 +1,7 @@
 package com.bodaganj.spring.boot.app.kafka;
 
-import com.bodaganj.spring.boot.app.kafka.consumer.FeederKafkaConsumer;
-import com.bodaganj.spring.boot.app.kafka.producer.FeederKafkaProducer;
+import com.bodaganj.spring.boot.app.kafka.consumer.TestKafkaConsumer;
+import com.bodaganj.spring.boot.app.kafka.producer.TestKafkaProducer;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.producer.RecordMetadata;
@@ -12,10 +12,10 @@ import java.util.List;
 
 @Getter
 @RequiredArgsConstructor
-public class FeederKafkaHelper<V> implements AutoCloseable {
+public class TestKafkaHelper<V> implements AutoCloseable {
 
-   private final FeederKafkaConsumer<V> consumer;
-   private final FeederKafkaProducer<V> producer;
+   private final TestKafkaConsumer<V> consumer;
+   private final TestKafkaProducer<V> producer;
    private final Duration duration = Duration.ofSeconds(2);
 
    public void sendMessageAndWaitToAppear(String key, V value) {

@@ -13,7 +13,7 @@ import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
-public class FeederKafkaConsumer<V> implements AutoCloseable {
+public class TestKafkaConsumer<V> implements AutoCloseable {
 
    private final KafkaConsumer<String, V> consumer;
    private final String topic;
