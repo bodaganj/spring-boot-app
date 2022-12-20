@@ -4,6 +4,7 @@
 * monitor/version endpoint is available through http when the app is started locally
 * consuming from kafka (which is started separately within the docker)
 * write to Mongo DB (which is started separately within the docker)
+* read from Mongo DB and expose via REST api
 * tested with embedded kafka
 
 ## REST endpoints
@@ -34,4 +35,4 @@ com.bodaganj.spring.boot.app.precondition.PrepareEnvTest
 4. Run test to feed kafka with some data
 5. Check app consumes data from kafka
 6. Check app writes data to Mongo
-7. Check data is available via rest
+7. Check data is available via rest (read from Mongo DB)
