@@ -25,7 +25,7 @@ public class PrepareEnvTest {
       String keyFather = UUID.randomUUID().toString();
       PersonDTO father = PersonDTO.builder()
                                   .age(33)
-                                  .name("Yana")
+                                  .name("Bogdan")
                                   .status("Father")
                                   .build();
 
